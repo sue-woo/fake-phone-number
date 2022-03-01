@@ -201,7 +201,6 @@ yargs(hideBin(process.argv))
     .showVersion()
     .getHelp().then(function (value) {
         console.log(value)
-        process.exit(0)
      })
 
     .argv
