@@ -198,10 +198,10 @@ yargs(hideBin(process.argv))
     
 
     // if no command is run then display help and exit.
-    .showVersion()
-    .getHelp().then(function (value) {
-        console.log(value)
-     })
+    //.showVersion()
+    //.getHelp().then(function (value) {
+    //    console.log(value)
+   //  })
 
     .argv
 
