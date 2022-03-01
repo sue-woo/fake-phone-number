@@ -24,7 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-
 const yargs = require('yargs/yargs')
 const {hideBin} = require('yargs/helpers')
 
@@ -60,8 +59,12 @@ var premium = ['0909', 'Premium rate services', '8790000', '8790999']
 var uk = ['03069', 'UK-wide', '990000', '990999']
 
 
-
+var help = ""
 yargs(hideBin(process.argv))   
+
+
+    
+
 
     // list-areas
     .command(
@@ -184,13 +187,24 @@ yargs(hideBin(process.argv))
      ])
 
 
-
     .epilogue('for more information about fake TV and radio numbers, visit https://www.ofcom.org.uk/')
 
 
-    .help()
-    .argv
 
+    // hide --version from help screen. Version is displayed anyway.
+    .hide('version')
+    .help()
+
+    
+
+    // if no command is run then display help and exit.
+    .showVersion()
+    .getHelp().then(function (value) {
+        console.log(value)
+        process.exit(0)
+     })
+
+    .argv
 
 
 
