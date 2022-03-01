@@ -38,12 +38,12 @@ https://www.ofcom.org.uk/
 git clone https://github.com/sue-woo/fake-phone-number.git
 cd fake-phone-number/
 npm install
-npm start
+npm start -- --help
 ```
 Or
 ```
 git clone https://github.com/sue-woo/fake-phone-number.git
 cd fake-phone-number/
 echo 'install yargs' && npm install yargs
-node index.js
+node index.js --help
 ```
