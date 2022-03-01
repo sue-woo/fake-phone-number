@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node fake-phone-number"
+    "start": "node fake-phone-number",
+    "help": "node fake-phone-number --help"
   },
   "repository": {
     "type": "git",
