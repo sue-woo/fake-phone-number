@@ -189,20 +189,7 @@ yargs(hideBin(process.argv))
 
     .epilogue('for more information about fake TV and radio numbers, visit https://www.ofcom.org.uk/')
 
-
-
-    // hide --version from help screen. Version is displayed anyway.
-    .hide('version')
     .help()
-
-    
-
-    // if no command is run then display help and exit.
-    //.showVersion()
-    //.getHelp().then(function (value) {
-    //    console.log(value)
-   //  })
-
     .argv
 
 
