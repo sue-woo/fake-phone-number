@@ -37,5 +37,6 @@ https://www.ofcom.org.uk/
 ```
 git clone https://github.com/sue-woo/fake-phone-number.git
 cd fake-phone-number/
-node index.js --help
+npm install
+npm start
 ```
