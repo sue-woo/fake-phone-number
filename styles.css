@@ -1,0 +1,17 @@
+html {
+    width: 100%;
+}
+body {
+    padding-left: 10px;
+    background-color:lightgreen;
+    max-width: 800px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 3px;
+  }
+
+img {
+    max-width: 500px;
+}
